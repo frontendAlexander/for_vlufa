@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="urf-8">
+	<link rel="stylesheet" href="5.css" type="text/css">
+</head>
+<body>
+	<header>
+		<h1>Lorem ipsum dolor sit amet, consectetur adipisicing.</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="home-link">GOTO 3------O </span>Ullam magni sequi fuga, temporibus blanditiis ea quidem explicabo minus earum nam quae dolorum velit non atque quod ab, qui minima, tenetur veniam consequuntur accusamus nisi amet unde. Possimus repellendus molestiae, quae deleniti debitis ut reprehenderit iste aperiam provident aut odit libero repudiandae aliquid suscipit. Explicabo placeat perspiciatis corporis nostrum, laboriosam quod, neque eos molestias. Illo, architecto ipsam sint. Labore vitae nulla in odit saepe asperiores illo dolorem doloremque, animi totam ut sed! Dolorum debitis perspiciatis laudantium aut, eos tempore maxime in aperiam rerum qui consequuntur reiciendis nam accusantium beatae voluptatum voluptatem, minima assumenda laboriosam quisquam omnis, similique expedita ea. Praesentium rem voluptatum ullam tenetur, debitis velit ratione voluptates commodi placeat in dolorum et quia a nulla illum incidunt officiis est, laborum voluptatem provident quibusdam, hic consequatur quisquam iusto cum? Nobis veniam vitae dolor maxime placeat fuga a iure temporibus quas, similique voluptate repellat, earum repellendus tempora nihil doloremque veritatis consequuntur ea reprehenderit voluptas provident eaque mollitia, suscipit aperiam praesentium. Beatae, quae laborum aperiam id saepe aut quisquam, consequuntur error dolores sint illo nulla, dicta sapiente facilis excepturi est tempore totam ducimus obcaecati aspernatur autem sit quam ullam. A maiores, optio aliquid quod dignissimos! Quaerat eius, repellendus iste, placeat veniam officiis porro dolorum! Architecto hic fugiat perspiciatis quo, ducimus explicabo omnis tenetur commodi possimus reiciendis, fuga voluptas nostrum! Voluptates dolorem aspernatur repellendus facilis vel illo nam, fugit ipsa doloribus. Inventore voluptate nulla error est explicabo autem dolorem dolor dignissimos quibusdam quam asperiores, ratione ut iusto architecto nam quod debitis ex, modi, quis repellat doloremque quo earum magni. Iure aliquid expedita tempore quibusdam! Neque, architecto! Quaerat sit magni omnis, reprehenderit, rem neque harum, et, facere tenetur eum aspernatur quis hic nam quas maiores consectetur laboriosam. Voluptatibus iure maxime molestiae numquam fugiat adipisci minus autem, esse quisquam, quasi rem, consequatur laboriosam dolorem. Animi, ratione adipisci eos ad nobis sequi atque inventore eligendi officia quae quisquam quas recusandae magni sunt saepe corporis soluta itaque officiis autem laboriosam minus eveniet quidem, ullam distinctio! Non praesentium a odio, facere suscipit illo inventore iste tempore blanditiis tenetur, numquam aspernatur debitis qui perspiciatis aliquam unde vitae. Nisi praesentium tenetur impedit, quo est sint, quibusdam quis temporibus molestiae ullam esse architecto commodi odio quisquam eius, accusantium excepturi hic, molestias rem quidem. Rem labore illo quam. Architecto quisquam ipsa repudiandae placeat et harum velit, quidem iusto, excepturi beatae porro, eaque minima delectus. Optio eveniet amet sint quibusdam nobis voluptatum incidunt sequi, ipsa sunt blanditiis assumenda voluptas consequatur adipisci atque, repellat laudantium. Facilis debitis aliquid qui nihil est eveniet vero numquam aut quis perspiciatis libero voluptatem accusantium nisi accusamus, error consequuntur voluptate quod laborum similique obcaecati odio aliquam soluta architecto tempora. Dolor, omnis, iste. Doloremque tenetur molestiae repellendus modi autem unde perspiciatis veniam, quis accusantium quibusdam ab eos nostrum nulla, architecto harum soluta est! Ab beatae ducimus tempora ut, quibusdam, quidem adipisci facere ea iure dicta, officia voluptate fuga dolorum. Illo deleniti voluptatem ab quibusdam asperiores temporibus hic reprehenderit quis quasi maxime?</p>
+	</header>
+	<footer class="footer">
+		&copy; 2019 СТАРАТЕЛЬный челик &mdash;
+		<a href="/terms-of-use">CORS</a>
+	</footer>
+	<script>
+		var html = document.documentElement;
+		var script = document.createElement("script");
+		script.src = "fontfaceobserver.js"
+		script.async = true;
+		script.onload = function(){
+			var roboto = new FontFaceObserver("Roboto");
+			var kurale = new FontFaceObserver("Kurale");
+			var timeout = 2000;
+			Promsie.all([
+				roboto.load(null, timeout),
+				kurale.laod(null, timeout)
+				]).then(function(){
+					html.classList.add("fonts-loaded");
+				}).catch(function(e){
+					html.classList.add("fonts-failed");
+				});
+		};
+		document.head.appendChild(script);
+	</script>
+</body>

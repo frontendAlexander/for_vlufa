@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="urf-8">
+	<link rel="stylesheet" href="6.css" type="text/css">
+</head>
+<body>
+	<main>
+		<div class="container">
+			<div class="box"></div>
+		</div>
+		<div>
+			<button>Наведи на меня и вылетит птичка</button>
+		</div>
+		<div class="dropdown" aria-haspopup="true">
+			<button id="dropdown__toggle" class="dropdown__toggle"></button>
+			<div class="dropdown__drawer">
+				<ul class="menu" role="menu">
+					<li class="menuitem"><a href="/">1</a></li>
+					<li class="menuitem"><a href="/">2</a></li>
+					<li class="menuitem"><a href="/">3</a></li>
+					<li class="menuitem"><a href="/">4</a></li>
+				</ul>
+			</div>
+			<p>
+				<a href="/">Info</a>
+			</p>
+		</div>
+	</main>
+	<footer class="footer">
+		&copy; 2019 СТАРАТЕЛЬный челик &mdash;
+		<a href="/terms-of-use">CORS</a>
+	</footer>
+	<script>
+	/*
+	(function(){
+		var toggle = document.getElementById('dropdown__toggle');
+		var dropdown = toggle.parentElement;
+		toggle.addEventListener("click", function(e){
+			e.preventDefault();
+			dropdown.classList.toggle('is-open');
+		})
+	})()
+	*/
+	(function(){
+		var toggle = document.getElementById('dropdown__toggle');
+		var dropdown = toggle.parentElement;
+		var drawer = document.getElementsByClassName('dropdown__drawer')[0];
+		var height = drawer.scrollHeight;
+		toggle.addEventListener("click", function(e){
+			e.preventDefault();
+			dropdown.classList.toggle('is-open');
+			if(dropdown.classList.contains('is-open')){
+				drawer.style.setProperty('height', height + 'px');
+				drawer.style.setProperty('opacity', '1');
+			} else {
+				drawer.style.setProperty('height', '0');
+			}
+		})
+	})()
+	</script>
+</body>

@@ -1,0 +1,22 @@
+.message {
+	padding: 0.8em 1.2em;
+	border-radius: 0.2em;
+	border: 1px solid black;
+	color: #265559;
+	background-color: #e0f0f2;
+}
+.message--success {
+	color: green;
+	border-color: green;
+	background-color: green;
+}
+.message--warning {
+	color: #594826;
+	border-color: #59262f;
+	background-color: #e8dec9;
+}
+.message--error {
+	color: red;
+	border-color: red;
+	background-color: red;
+}

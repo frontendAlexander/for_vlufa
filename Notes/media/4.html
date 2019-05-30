@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="urf-8">
+	<link rel="stylesheet" href="4.css" type="text/css">
+</head>
+<body>
+	<header class="page-header" id="header">
+	 	<div class="title">
+	 		<h1>lorem</h1>
+	 	</div>
+	 	<div class="slogan">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
+	 </header>
+	 <nav class="menu" id="main-menu">
+	 	<button class="menu-toggle" id="toggle-menu">Close</button>
+	 	<div class="menu-dropdown">
+	 		<ul class="nav-menu">
+	 			<li><a href="/">1</a></li>
+	 			<li><a href="/">2</a></li>
+	 			<li><a href="/">3</a></li>
+	 			<li><a href="/">4</a></li>
+	 		</ul>
+	 	</div>
+	 </nav>
+	 <aside class="hero" id="hero">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rerum architecto, quod nisi laudantium quo pariatur natus neque quia, optio eligendi suscipit velit, modi esse obcaecati quidem consequatur possimus? Error!</aside>
+	 <main id="main">
+	 	<div class="row">
+	 		<secttion class="column">
+	 			<h2 class="subtitle">title</h2>
+	 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet reprehenderit est quae culpa voluptatibus aliquam odit ducimus aperiam maiores, adipisci labore sequi nemo? Est eveniet dolores deserunt accusamus. Neque, natus.<a href="/">GOTO</a></p>
+	 		</secttion>
+	 		<secttion class="column">
+	 			<h2 class="subtitle">title</h2>
+	 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, consequatur nobis commodi iure fuga laudantium repudiandae, et reprehenderit sint, distinctio similique amet quisquam blanditiis doloremque quod omnis veniam! Sed, officia. <a href="/">GOTO</a></p>
+	 		</secttion>
+	 		<secttion class="column">
+	 			<h2 class="subtitle">title</h2>
+	 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quas commodi maxime sequi, vitae, quia aspernatur aperiam. Dolorem facilis quasi deserunt quisquam doloribus, ipsam soluta obcaecati nulla, sapiente explicabo, itaque.<a href="/">GOTO</a></p>
+	 		</secttion>
+	 	</div>
+	 </main> 
+	<footer class="footer">
+		&copy; 2019 СТАРАТЕЛЬный челик &mdash;
+		<a href="/terms-of-use">CORS</a>
+	</footer>
+	<script>
+		(function(){
+			var button = document.getElementById("toggle-menu");
+			button.addEventListener("click", function(event){
+				event.preventDefault();
+				console.log("!")
+				var menu = document.getElementById("main-menu");
+				console.log(menu)
+				menu.classList.toggle('is-open');
+				
+			})
+		})();
+	</script>
+</body>

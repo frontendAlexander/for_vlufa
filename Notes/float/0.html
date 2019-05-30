@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="urf-8">
+	<link rel="stylesheet" href="0.css" type="text/css">
+	<link rel="stylesheet" href="menu.css" type="text/css">
+	<link rel="stylesheet" href="media.css" type="text/css">
+	<link rel="stylesheet" href="dropdown.css" type="text/css">
+	<link rel="stylesheet" href="button.css" type="text/css">
+	<link rel="stylesheet" href="message.css" type="text/css">
+</head>
+<body>
+	<nav class="nav-container">
+		<div class="nav-container__inner">
+			<ul class="top-nav">
+				<li class="top-nav__home"><a href="/">1</a></li>
+				<li class="top-nav__home"><a href="/">2</a></li>
+				<li class="top-nav__home"><a href="/">3</a></li>
+				<li class="top-nav__home"><a href="/">4</a></li>
+				<li class="top-nav__home"><a href="/">5</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="hero">
+		<div class="hero__inner">
+			<h2>Title</h2>
+			<button class="button button--small">Подробнее</button>
+			<button class="button button--success">Сохранить</button>
+			<button class="button  button--danger button--large">Отмена</button>
+		</div>
+	</div>
+	<main>
+		<section>
+			<div class="dropdown float-right">
+				<button class="dropdown__toggle" id="dropdown__toggle"></button>
+				<div class="dropdown__drawer">
+					<ul class="menu">
+						<li><a href="/">1</a></li>
+						<li><a href="/coffees">2</a></li>
+						<li><a href="/brewers">3</a></li>
+						<li><a href="/specials">4</a></li>
+						<li><a href="/about">5</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="media">
+			<img src="#" alt="" class="media__image">
+			<div class="media__body">
+				<h4>Title</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nihil doloribus, voluptatibus incidunt nobis animi maxime! Veritatis impedit et, ipsa iusto, quasi harum culpa perspiciatis ducimus sint, fugiat enim perferendis!</p>
+			</div>
+		</div>
+		</section>
+		<section class="delivery">
+			<div class="delivery-container">
+				<div class="clearfix">
+					<div class="row">
+						<div class="column-6">
+							<div class="media">
+								<img src="#" style="height: 100px; width: 100px; background-color:black" alt="" class="media-image">
+								<div class="media-body">
+									<h4></h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic sunt quidem quis dignissimos tempore officiis officia ab iure, perspiciatis fugiat eos nisi laborum amet dolores! Modi natus quaerat officia doloribus.</p>
+								</div>
+							</div>
+						</div>
+						<div class="column-6">
+							<div class="media">
+								<img src="#" style="height: 100px; width: 100px; background-color:black" alt="" class="media-image">
+								<div class="media-body">
+									<h4></h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quas facere, deserunt architecto quae doloribus illo iure hic obcaecati id unde in eum minima, totam quaerat possimus ipsum! Nisi, corrupti!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="column-6">
+							<div class="media">
+								<img src="#" style="height: 100px; width: 100px; background-color:black" alt="" class="media-image">
+								<div class="media-body">
+									<h4></h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores nostrum veritatis iusto ullam incidunt mollitia ut repellendus nobis rem quam commodi, ea velit ratione aspernatur esse in, voluptas quae recusandae!</p>
+								</div>
+							</div>
+						</div>
+						<div class="column-6">
+							<div class="media">
+								<img src="#" style="height: 100px; width: 100px; background-color:black" alt="" class="media-image">
+								<div class="media-body">
+									<h4></h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis voluptatem iusto, voluptatum fuga, at aut vel. Sit magnam adipisci, vero aliquid ullam vitae dolor. Impedit molestiae unde nam facilis neque!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		&copy; 2019 СТАРАТЕЛЬный челик &mdash;
+		<a href="/terms-of-use">CORS</a>
+	</footer>
+	<script>
+		(function(){
+			var toggle = document.querySelector(".dropdown__toggle");
+			toggle.addEventListener("click",function(event){
+				event.preventDefault();
+				var dropdown = event.target.parentNode;
+				dropdown.classList.toggle('is-open');
+			})
+		})();
+	</script>
+</body>
+

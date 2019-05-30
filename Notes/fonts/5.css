@@ -1,0 +1,98 @@
+:root {
+	box-sizing: border-box;
+	font-size: calc(0.5em + 1vw);
+	--main-font: Helvetica, Arial, sans-serif;
+	--brand-green: hsl(162, 87%, 21%);
+	--dark-green: hsl(162, 88%, 30%);
+	--medium-green: hsl(162, 73%, 46%);
+	--text-color: hsl(210, 11%, 15%);
+	--gray: hsl(210, 7%, 56%);
+	--light-gray: hsl(210, 17%, 95%);
+	--extra-light-gray: hsl(210, 17%, 98%);
+	--white: hsl(0, 0%, 100%);
+	--red: hsl(342, 63%, 46%);
+	box-sizing: border-box;
+	color: var(--text-color);
+}
+*,
+::before,
+::after {
+	box-sizing: inherit;
+}
+@font-size {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 300;
+	src: local("Roboto Light"), local("Roboto-Light"),
+		url(https://example.com/roboto.woff2) format('woff2'),
+		url(https://example.com/roboto.woff2) format('woff');
+		font-display: swap; 
+		/*
+		auto: ожидание загрузки 
+		swap:вспышка нестилизованного текста
+		fallback: после 100мс auto, после полной загрузки swap;
+		optional: только системные
+		*/
+}
+body {
+	margin: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	background-color: var(--extra-light-gray);
+	font-family: sans-serif;
+}
+@media (min-width: 50em){
+	:root {
+		font-size: calc(1.25 + 1vw);
+	}
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+a:link {
+	color: blue;
+	text-decoration: none;
+}
+a:visited {
+	color: purple;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active{
+	color: red;
+}
+body {
+	margin: 0;
+	line-height: 1.4;
+	letter-spacing: 0.01em;
+	background-color: var(--extra-light-gray);
+}
+.fonts-failed body {
+	font-family: Helvetica, Arial, sans-serif;
+}
+h1,h2,h3,h4 {
+	font-family: Kurale, serif;
+	letter-spacing: 0.03em;
+}
+.fonts-failed h1,
+.fonts-failed h2,
+.fonts-failed h3,
+.fonts-failed h4 {
+	font-family: Georgia, serif;
+}
+.home-link {
+	color: var(--text-color);
+	font-size: 1.6rem;
+	font-family: Kurale, serif;
+	font-weight: bold;
+	letter-spacing: 0.03em;
+	text-decoration: none;
+}
+.font-failed .home-link {
+	font-family: Georgia, serif;
+}
+
